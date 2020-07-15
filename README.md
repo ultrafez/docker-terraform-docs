@@ -44,13 +44,13 @@ View **[Dockerfile](https://github.com/cytopia/docker-terraform-docs/blob/master
 
 [![Docker hub](http://dockeri.co/image/cytopia/terraform-docs?kill_cache=1)](https://hub.docker.com/r/cytopia/terraform-docs)
 
-Tiny Alpine-based multistage-build dockerized version of [terraform-docs](https://github.com/segmentio/terraform-docs)<sup>[1]</sup>,
+Tiny Alpine-based multistage-build dockerized version of [terraform-docs](https://github.com/terraform-docs/terraform-docs)<sup>[1]</sup>,
 which additionally implements `terraform-docs-replace` allowing you to automatically and safely
 replace the `terraform-docs` generated output infile.
 Furthermore this implementation is also **Terraform >= 0.12 ready**<sup>[2]</sup>. See [Generic Usage](#generic) for more details.
 The image is built nightly against multiple stable versions and pushed to Dockerhub.
 
-* <sub>[1] Official project: https://github.com/segmentio/terraform-docs</sub>
+* <sub>[1] Official project: https://github.com/terraform-docs/terraform-docs</sub>
 * <sub>[2] Based on an awk script by [cloudposse/build-harness](https://github.com/cloudposse/build-harness/blob/master/bin/terraform-docs.awk)</sub>
 
 
@@ -65,7 +65,7 @@ changes will be introduced).
 
 | Docker tag | Build from docker-terraform-docs | Build from terraform-docs |
 |------------|----------------------------------|---------------------------|
-| `latest`   | [Branch: master](https://github.com/cytopia/docker-terraform-docs) | [Branch: master](https://github.com/segmentio/terraform-docs) |
+| `latest`   | [Branch: master](https://github.com/cytopia/docker-terraform-docs) | [Branch: master](https://github.com/terraform-docs/terraform-docs) |
 | `0.9.1`    | [Branch: master](https://github.com/cytopia/docker-terraform-docs) | [Tag: v0.9.1](https://github.com/segmentio/terraform-docs/tree/v0.9.1) |
 | `0.9.0`    | [Branch: master](https://github.com/cytopia/docker-terraform-docs) | [Tag: v0.9.0](https://github.com/segmentio/terraform-docs/tree/v0.9.0) |
 | `0.8.2`    | [Branch: master](https://github.com/cytopia/docker-terraform-docs) | [Tag: v0.8.2](https://github.com/segmentio/terraform-docs/tree/v0.8.2) |
@@ -91,7 +91,7 @@ you will have to take care yourself and update your CI tools every time a new ta
 
 | Docker tag     | Build from docker-terraform-docs | Build from terraform-docs |
 |----------------|----------------------------------|---------------------------|
-| `latest-<tag>` | Tag: `<tag>`                     | [Branch: master](https://github.com/segmentio/terraform-docs) |
+| `latest-<tag>` | Tag: `<tag>`                     | [Branch: master](https://github.com/terraform-docs/terraform-docs) |
 | `0.9.1-<tag>`  | Tag: `<tag>`                     | [Tag: v0.9.1](https://github.com/segmentio/terraform-docs/tree/v0.9.1) |
 | `0.9.0-<tag>`  | Tag: `<tag>`                     | [Tag: v0.9.0](https://github.com/segmentio/terraform-docs/tree/v0.9.0) |
 | `0.8.2-<tag>`  | Tag: `<tag>`                     | [Tag: v0.8.2](https://github.com/segmentio/terraform-docs/tree/v0.8.2) |
